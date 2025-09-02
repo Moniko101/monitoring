@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Button Grid with Column Styles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* First column buttons */
+        .container a:nth-child(3n+1) {
+            background-color: #3498db;
+        }
+
+        .container a:nth-child(3n+1):hover {
+            background-color: #2980b9;
+        }
+
+        /* Second column buttons */
+        .container a:nth-child(3n+2) {
+            background-color: #27ae60;
+        }
+
+        .container a:nth-child(3n+2):hover {
+            background-color: #1e8449;
+        }
+
+        /* Third column buttons */
+        .container a:nth-child(3n) {
+            background-color: #e67e22;
+        }
+
+        .container a:nth-child(3n):hover {
+            background-color: #ca6f1e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://example.com/1" class="btn">Button 1</a>
+        <a href="https://example.com/2" class="btn">Button 2</a>
+        <a href="https://example.com/3" class="btn">Button 3</a>
+        <a href="https://example.com/4" class="btn">Button 4</a>
+        <a href="https://example.com/5" class="btn">Button 5</a>
+        <a href="https://example.com/6" class="btn">Button 6</a>
+        <a href="https://example.com/7" class="btn">Button 7</a>
+        <a href="https://example.com/8" class="btn">Button 8</a>
+        <a href="https://example.com/9" class="btn">Button 9</a>
+        <a href="https://example.com/10" class="btn">Button 10</a>
+        <a href="https://example.com/11" class="btn">Button 11</a>
+        <a href="https://example.com/12" class="btn">Button 12</a>
+    </div>
+</body>
+
+</html>
